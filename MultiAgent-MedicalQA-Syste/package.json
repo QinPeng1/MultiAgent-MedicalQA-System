@@ -1,0 +1,42 @@
+{
+  "name": "agent-rag-workflow",
+  "version": "1.0.0",
+  "description": "多智能体医疗问答系统 - 支持 RAG 和 MCP 协议 (MiMo)",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "example": "tsx example.ts",
+    "interactive": "tsx src/index.ts --interactive",
+    "test": "vitest"
+  },
+  "keywords": [
+    "agent",
+    "rag",
+    "mcp",
+    "workflow",
+    "mimo",
+    "medical",
+    "healthcare"
+  ],
+  "dependencies": {
+    "@langchain/core": "^0.3.0",
+    "@langchain/openai": "^0.3.0",
+    "@langchain/community": "^0.3.0",
+    "langchain": "^0.3.0",
+    "chromadb": "^1.9.0",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.0",
+    "dotenv": "^16.4.0",
+    "tiktoken": "^1.0.15",
+    "openai": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0",
+    "tsx": "^4.0.0",
+    "vitest": "^1.0.0"
+  }
+}
